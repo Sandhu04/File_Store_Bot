@@ -14,18 +14,18 @@ from logging.handlers import RotatingFileHandler
 
 
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
-APP_ID = int(os.environ.get("APP_ID", ""))
-API_HASH = os.environ.get("API_HASH", "")
+APP_ID = int(os.environ.get("APP_ID", "29882686"))
+API_HASH = os.environ.get("API_HASH", "b642a25aee67b2aed02116df4a916bca")
 
 
-OWNER = os.environ.get("OWNER", "https://t.me/Grand_Zeno_Omni_KingBot") #Owner username
-OWNER_ID = int(os.environ.get("OWNER_ID", "5806054139")) #Owner user id
-DB_URL = os.environ.get("DB_URL", "")
+OWNER = os.environ.get("OWNER", "https://t.me/Sandhulinkwala") #Owner username
+OWNER_ID = int(os.environ.get("OWNER_ID", "6157414954")) #Owner user id
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://megalink010101:wTyIZ8qAQB4nE4NG@cluster0.pvrni.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DB_NAME", "Cluster0")
 
 
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002042077879"))
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002122508523"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002007456443"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002117715204"))
 
 
 SECONDS = int(os.getenv("SECONDS", "600")) # auto delete in seconds
@@ -33,7 +33,7 @@ SECONDS = int(os.getenv("SECONDS", "600")) # auto delete in seconds
 
 
 PORT = os.environ.get("PORT", "8080")
-TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "2"))
+TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "3"))
 
 
 
@@ -41,8 +41,8 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "2"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {mention}\n\nI am a file store bot Powered by @Anime_Factory_Official ⚡.")
 
 try:
-    ADMINS=[5806054139]
-    for x in (os.environ.get("ADMINS", "5806054139 6295345515").split()):
+    ADMINS=[6157414954]
+    for x in (os.environ.get("ADMINS", "6699681580 6157414954 6316008361").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
